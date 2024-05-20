@@ -1,32 +1,102 @@
-<!-- This is a comment, you should put these above each line of code when learning. -->
-<!-- We are makng a test html page to test out our new site, this will be come an art site. -->
-<!-- The first line of actual HTML code is the doctype, this tells the browser what type of document
-we are working with, and what version of HTML to expect. -->
-<!DOCTYPE html> 
-<!-- HTML has two main parts just like a person.  A head and a body. -->
-<!-- The head contains information about the document, like the title, and the style sheets. -->
-<!-- The body contains the content of the document, like the text, images, and links. -->
-<!-- Start and end the HTML document with the HTML tag. -->
-<html>
-    <!-- The head tag is always inside the html tag. -->
-        <!-- The head tag contains information about the document, such as the title, and the style sheets. -->
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata about the webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Web Applications</title>
 
-    <title>Online AI Art Show</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Put a header that usually matches the title of the page. -->
-        <header>
-            <!-- Put a h1 tag to make the header large. -->
-            <h1>Online AI Art Show</h1>
-            <!-- Put a paragraph tag to put a description of the site -->
-            <p>This website is dedicated to the art created by AI.  
-                We have a collection of art created by AT and we are always looking for more.  
-                If you have any art that you would like to submit, please contact us.</p>
-            <p>My second paragraph.</p>
-        </header>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section containing the main title -->
+    <header>
+        <h1>Understanding Web Applications</h1>
+    </header>
     
+    <!-- Introduction section explaining what web applications are -->
+    <section id="introduction">
+        <h2>What are Web Applications?</h2>
+        <p>Web applications are software applications that run on a web server, unlike computer-based software programs that are launched by your operating system. They are accessed through a web browser with an internet connection.</p>
+        <!-- Example image for web applications -->
+        <img src="webapplications.jpg" alt="Web Applications" />
+    </section>
+
+    <!-- Section explaining how web applications interact with back-end databases -->
+    <section id="database-interaction">
+        <h2>Interaction with Back-End Databases</h2>
+        <p>Web applications interact with back-end databases to store and retrieve data. This interaction typically involves making HTTP requests to a server, which then communicates with a database to perform CRUD (Create, Read, Update, Delete) operations.</p>
+        <!-- Example image for database interaction -->
+        <img src="backendservers.jpg" alt="Back End Databases" />
+    </section>
+
+    <!-- Section providing use cases for web applications in business -->
+    <section id="use-cases">
+        <h2>Use Cases in Business</h2>
+        <p>Web applications are used in both intranet and internet scenarios. Intranet applications are used within organizations for internal processes, while internet applications are available to the public.</p>
+        <!-- Example image for business use cases -->
+        <img src="webappsbusiness.jpg" alt="Web Applications in Business" />
+    </section>
+
+    <!-- Section containing an interactive element implemented with JavaScript -->
+    <section id="interactive-section">
+        <h2>Interactive Element</h2>
+        <!-- Button to reveal additional information -->
+        <button id="reveal-button">Reveal More Information</button>
+        <!-- Additional information that is revealed when the button is clicked -->
+        <div id="more-info" style="display: none;">
+            <h3>CRUD Operations</h3>
+            <p>CRUD stands for Create, Read, Update, and Delete. These are the four basic operations that can be performed on data in a database.</p>
+            <ul>
+                <li><strong>Create:</strong> Adding new records to the database.</li>
+                <li><strong>Read:</strong> Retrieving data from the database.</li>
+                <li><strong>Update:</strong> Modifying existing records in the database.</li>
+                <li><strong>Delete:</strong> Removing records from the database.</li>
+            </ul>
     
-    </body>
+            <h3>Security Measures</h3>
+            <p>Security is crucial for web applications to protect data and user privacy. Common security measures include:</p>
+            <ul>
+                <li><strong>HTTPS:</strong> Ensures data is encrypted during transmission.</li>
+                <li><strong>Authentication:</strong> Verifying the identity of users.</li>
+                <li><strong>Authorization:</strong> Granting access rights to users based on their roles.</li>
+                <li><strong>Data Encryption:</strong> Encrypting data to prevent unauthorized access.</li>
+            </ul>
+    
+            <h3>Technologies Used</h3>
+            <p>Web applications are built using various technologies:</p>
+            <ul>
+                <li><strong>Front-End Frameworks:</strong> React, Angular, Vue.js.</li>
+                <li><strong>Back-End Frameworks:</strong> Node.js, Django, Flask.</li>
+                <li><strong>Databases:</strong> SQL (MySQL, PostgreSQL), NoSQL (MongoDB, Cassandra).</li>
+            </ul>
+    
+            <h3>Case Study: Example Web App</h3>
+            <p>Let's consider a popular web application like Facebook:</p>
+            <ul>
+                <li><strong>Data Storage:</strong> Stores user data, posts, and interactions in a database.</li>
+                <li><strong>Real-Time Updates:</strong> Uses WebSockets for real-time notifications and updates.</li>
+                <li><strong>Security:</strong> Implements robust security measures to protect user data.</li>
+            </ul>
+    
+            <h3>Performance Optimization</h3>
+            <p>Improving the performance of web applications involves techniques such as:</p>
+            <ul>
+                <li><strong>Caching:</strong> Storing frequently accessed data in memory to reduce load times.</li>
+                <li><strong>Lazy Loading:</strong> Loading content only when it is needed to improve initial load times.</li>
+                <li><strong>Efficient Queries:</strong> Writing optimized database queries to reduce processing time.</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <!-- Footer section with copyright information -->
+    <footer>
+        <p>&copy; 2024 Web Applications Education</p>
+    </footer>
+
+    <!-- Link to external JavaScript file for interactivity -->
+    <script src="script.js"></script>
+</body>
 </html>
