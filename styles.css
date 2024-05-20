@@ -1,0 +1,54 @@
+/* General styling for the entire body of the webpage */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Styling for the header and footer sections */
+header, footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+/* Styling for each section of the webpage */
+section {
+    margin: 2em;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+/* Styling for headings */
+h1, h2 {
+    color: #333;
+}
+
+/* Styling for buttons */
+button {
+    display: block;
+    margin: 1em auto;
+    padding: 0.5em 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #555;
+}
+
+/* Ensure images are responsive */
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
